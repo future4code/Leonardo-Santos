@@ -5,38 +5,38 @@
 
 
 //  Exercícios de escrita de código
-/*  Exercício 1
+//Exercício 1
 let nome;
 let idade;
 console.log(typeof nome);
 console.log(typeof idade);
-*/
+
 // Foi impresso UNDEFINED, porque não declarei nenhum tipo de valor para as variáveis;
 
-/*
+
 nome = prompt("Qual seu nome?");
 idade = prompt("Qual sua idade?");
 console.log(typeof nome);
 console.log(typeof idade);
-*/
+
 //Agora os dois tipos de variáveis foram impressos como string, porque qualquer tipo de resposta 
 //que vem de um prompt se torna 'string'
 
-/*console.log("Olá", nome, "você tem", idade, "anos");*/
+console.log("Olá", nome, "você tem", idade, "anos");
 
 
 
-/*  Exercício 2
+//Exercício 2
 let maiorDeIdade = prompt("Você tem mais de 18 anos?");
 let corDaRoupaAzul = prompt("Você está usando uma roupa azul hoje?");
 let tarefasDoDia = prompt("Você terminou suas tarefas de hoje?");
 console.log("Você tem mais de 18 anos?", maiorDeIdade);
 console.log("Você está usando uma roupa azul hoje?", corDaRoupaAzul);
 console.log("Você terminou suas tarefas de hoje?", tarefasDoDia);
-*/
 
 
-/*  Exercício 3
+
+//Exercício 3
 let a = 10;
 let b = 25;
 let c;
@@ -46,7 +46,7 @@ b = c;
 
 console.log("O novo valor de a é", a);
 console.log("O novo valor de b é", b);
-*/
+
 
 
 //  Desafio
