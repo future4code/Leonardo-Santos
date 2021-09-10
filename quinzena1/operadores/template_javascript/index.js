@@ -72,3 +72,65 @@
 // console.log("O primeiro número é igual ao segundo?", numeroIgual);
 // console.log("O primeiro número é divisível pelo segundo?", numeroDivisivel1);
 // console.log("O segundo número é divisível pelo primeiro?", numeroDivisivel2);
+
+/*  Desafio */
+// 1)R:
+// let grausF = 77;
+// let grausFEmKelvin = (grausF - 32) * (5/9) + 273.15;
+// console.log(grausFEmKelvin);
+
+// let grausC = 80;
+// let grausCEmFahrenheit = (80)*(9/5) + 32;
+// console.log(grausCEmFahrenheit);
+
+//  let grausC = 30;
+//  let grausCEmFahrenheit = (30) * (9/5) + 32;
+//  let grausCEmKelvin = 30 + 273.15; 
+//  console.log(grausCEmFahrenheit);
+//  console.log(grausCEmKelvin);
+
+// let grausC = Number(prompt("Informe os Graus°C"))
+// let grausCEmKelvin =  grausC + 273.15;
+// let grausCEmFahrenheit = (grausC) * (9/5) + 32;
+// console.log (grausCEmKelvin, "Kelvin");
+// console.log(grausCEmFahrenheit, "Fahrenheit");
+
+
+
+// 2)R:
+// const quilowattHora = 0.05;
+// const valorPago = quilowattHora * 285;
+// const desconto = (valorPago * 15) / 100;
+// console.log(valorPago - desconto);
+
+
+
+//3)R:
+//A
+let libraParaKilograma = 20 / 2.205;
+console.log("20 lb equivalem a", libraParaKilograma, "Kg")
+
+//B
+const ozParaKilograma = 10.5 / 35.274;
+console.log("10.5oz equivalem a", ozParaKilograma, "Kg");
+
+//C 
+const milhaParaMetro = 100 * 1609;
+console.log("100mi equivalem a", milhaParaMetro, "m");
+
+//D
+const pesParaMetro = 50 / 3.281;
+console.log("50ft equivalem a", pesParaMetro, "m");
+
+//E  
+const galaoParaLitro = 103.56 * 3.806;
+console.log("103.56gal equivalem a", galaoParaLitro, "l");
+
+//F 
+const xicaraParaLitros = (450 * 6) / 25;
+console.log("450 xic equivalem a", xicaraParaLitros, "l");
+
+//G 
+libraParaKilograma = Number(prompt("Digite quantas LB você quer converter para KG"))
+let resultado = libraParaKilograma / 2.205;
+console.log(resultado);
