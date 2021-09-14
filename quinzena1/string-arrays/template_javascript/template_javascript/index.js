@@ -78,3 +78,12 @@ substituir todos os "a" por "i", e vai mostrar o tamanho da frase;
 /* Desafio */
 
 /* 1 */
+// let array = [];
+// let frase = prompt("Digite uma frase");
+// array = frase.split(' ');
+// console.log(array);
+
+/* 2 */
+// const frutas = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"];
+// const index = frutas.indexOf("Abacaxi");
+// console.log(index, frutas);
