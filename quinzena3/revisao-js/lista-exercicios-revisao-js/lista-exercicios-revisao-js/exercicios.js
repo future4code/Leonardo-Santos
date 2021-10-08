@@ -142,12 +142,22 @@ function imprimeChamada() {
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
-
+  const novoObjeto = {
+    largura: lado1,
+    altura: lado2,
+    perimetro: 2 *(lado1 + lado2),
+    area: lado1 * lado2
+  }
+  return novoObjeto
 }
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
-
+  const novoObjeto = {
+    ...pessoa,
+    nome: "ANÔNIMO"
+  }
+  return novoObjeto
 }
 
 // EXERCÍCIO 16A
