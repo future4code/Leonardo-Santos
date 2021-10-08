@@ -81,26 +81,66 @@ function comparaDoisNumeros(num1, num2) {
   //   maiorDivisivelPorMenor: Y,
   //   diferenca: Z
   // }
+  let comparaDoisN;
+  if(num1 > num2) {
+    comparaDoisN = {
+      maiorNumero: num1,
+      maiorDivisivelPorMenor: num1 % num2 === 0,
+      diferenca: num1 - num2
+    }
+  }else {
+    comparaDoisN = {
+      maiorNumero: num2,
+      maiorDivisivelPorMenor: num2 % num1 === 0,
+      diferenca: num2 - num1
+    }
+  }
+  return comparaDoisN
 }
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-
+  let novoArray = []
+  let segundoMaiorNumero
+  let segundoMenorNumero
+  for(let i = 0; i < array.length; i++) {
+    if(array[i] < array[i+1]){
+      segundoMaiorNumero = array[i];
+    }
+  }
+  
+  novoArray.push(segundoMaiorNumero, segundoMenorNumero);
+  return novoArray
 }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-
+  const novoArray = (a, b) => {
+    return a - b
+  }
+  return array.sort(novoArray);
 }
-
 // EXERCÍCIO 12
 function filmeFavorito() {
-
+  const filmeFavoritoDeAstrodev = {
+    nome: "O Diabo Veste Prada",
+    ano: 2006,
+    diretor: "David Frankel",
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+  }
+  return filmeFavoritoDeAstrodev;
 }
 
 // EXERCÍCIO 13
 function imprimeChamada() {
   // "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
+  const filmeFavoritoDeAstrodev = {
+    nome: "O Diabo Veste Prada",
+    ano: 2006,
+    diretor: "David Frankel",
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+  }
+  return `Venha assistir ao filme ${filmeFavoritoDeAstrodev.nome}, de ${filmeFavoritoDeAstrodev.ano}, dirigido por ${filmeFavoritoDeAstrodev.diretor} e estrelado por ${filmeFavoritoDeAstrodev.atores[0]}, ${filmeFavoritoDeAstrodev.atores[1]}, ${filmeFavoritoDeAstrodev.atores[2]}, ${filmeFavoritoDeAstrodev.atores[3]}.`
 }
 
 // EXERCÍCIO 14
