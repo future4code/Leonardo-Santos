@@ -100,17 +100,17 @@ function comparaDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-  let novoArray = []
-  let segundoMaiorNumero
-  let segundoMenorNumero
-  for(let i = 0; i < array.length; i++) {
-    if(array[i] < array[i+1]){
-      segundoMaiorNumero = array[i];
-    }
-  }
+  // let novoArray = []
+  // let segundoMaiorNumero
+  // let segundoMenorNumero
+  // for(let i = 0; i < array.length; i++) {
+  //   if(array[i] < array[i+1]){
+  //     segundoMaiorNumero = array[i];
+  //   }
+  // }
   
-  novoArray.push(segundoMaiorNumero, segundoMenorNumero);
-  return novoArray
+  // novoArray.push(segundoMaiorNumero, segundoMenorNumero);
+  // return novoArray
 }
 
 // EXERCÍCIO 11
