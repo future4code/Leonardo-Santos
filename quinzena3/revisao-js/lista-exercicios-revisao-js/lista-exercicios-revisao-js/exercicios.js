@@ -162,27 +162,51 @@ function anonimizaPessoa(pessoa) {
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
-
+  const maioresDeIdade = arrayDePessoas.filter((item) => {
+    return item.idade >= 18
+  })
+  return maioresDeIdade
 }
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
-
+  const menoresDeIdade = arrayDePessoas.filter((item) => {
+    return item.idade < 18
+  })
+  return menoresDeIdade
 }
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
-
+  // const novoArray = [];
+  // for(let i of array) {
+  //   novoArray.push(i * 2)
+  // }
+  // return novoArray
+  const novoArray = array.map((item) => {
+    return item * 2
+  })
+  return novoArray
 }
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
-
+  const transformaArrayStringVezesDois = array.map((item) => {
+    return item * 2 + ""
+  })
+  return transformaArrayStringVezesDois
 }
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
-
+  const transformaArrayString = array.map((item) => {
+    if(item % 2 === 0) {
+      return `${item} é par`
+    }else {
+      return  `${item} é ímpar`
+    }
+  })
+  return transformaArrayString
 }
 
 // EXERCÍCIO 18A
