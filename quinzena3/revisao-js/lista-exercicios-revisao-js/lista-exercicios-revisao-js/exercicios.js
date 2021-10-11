@@ -252,22 +252,38 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
-  consultasNome.sort((a, b) => {
-    if(a.nome < b.nome){
-      return -1
-    }else {
-      return true
+  // consultasNome.sort((a, b) => {
+  //   if(a.nome < b.nome){
+  //     return -1
+  //   }else {
+  //     return true
+  //   }
+  // })
+  // return consultasNome
+
+  for(let n = consultasNome.length - 1; n > 0; n--) {
+    for(let i = 0; i < n; i++){
+      if(consultasNome[i].nome > consultasNome[i + 1].nome){
+        [consultasNome[i], consultasNome[i + 1]] = [consultasNome[i + 1], consultasNome[i]];
+      }
     }
-  })
-  return consultasNome
+  }
+  return consultasNome;
 }
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
-  
+
 }
 
 // EXERCÍCIO 20
 function calculaSaldo(contas) {
-
+  contas.forEach((conta) => {
+    let totalCompras = 0
+    conta.compras.forEach((valor) => {
+      totalCompras += valor
+    })
+    conta.saldoTotal -= totalCompras
+  })
+  return contas
 }
