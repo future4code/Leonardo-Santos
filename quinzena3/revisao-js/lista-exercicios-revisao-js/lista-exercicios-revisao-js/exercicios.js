@@ -9,21 +9,35 @@ function inverteArray(array) {
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-  let numerosPares = array.filter((item) =>{
-    return item % 2 === 0
-  })
-  let numerosParesElevadosPorDois = numerosPares.map((item) =>{
-    return item**2
-  })
-  return numerosParesElevadosPorDois;
+  // let numerosPares = array.filter((item) =>{
+  //   return item % 2 === 0
+  // })
+  // let numerosParesElevadosPorDois = numerosPares.map((item) =>{
+  //   return item**2
+  // })
+  // return numerosParesElevadosPorDois;
+  let novoArray = []
+  for(let i = 0; i < array.length; i++) {
+    if(array[i] % 2 === 0){
+      novoArray.push(array[i] **2);
+    }
+  }
+  return novoArray;
 }
 
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
-  let numerosPar = array.filter((item) =>{
-    return item % 2 === 0
-  })
-  return numerosPar;
+  // let numerosPar = array.filter((item) =>{
+  //   return item % 2 === 0
+  // })
+  // return numerosPar;
+  let novoArray = [];
+  for(let i of array){
+    if(i % 2 === 0){
+      novoArray.push(i)
+    }
+  }
+  return novoArray
 }
 
 // EXERCÍCIO 04
@@ -273,7 +287,7 @@ function ordenaPorNome(consultasNome) {
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
-
+  
 }
 
 // EXERCÍCIO 20
