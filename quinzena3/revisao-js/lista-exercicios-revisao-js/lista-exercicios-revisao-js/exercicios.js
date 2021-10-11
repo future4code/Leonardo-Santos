@@ -101,21 +101,40 @@ function comparaDoisNumeros(num1, num2) {
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
   let novoArray = []
-  array.sort(function(a, b){
-    return a - b
-  })
-  let segundoMaiorNumero = array[array.length - 2]
-  let segundoMenorNumero = array[1]
-  novoArray.push(segundoMaiorNumero, segundoMenorNumero);
+  // array.sort(function(a, b){
+  //   return a - b
+  // })
+  // let segundoMaiorNumero = array[array.length - 2]
+  // let segundoMenorNumero = array[1]
+  // novoArray.push(segundoMaiorNumero, segundoMenorNumero);
+  // return novoArray;
+
+  for(let n = array.length - 1; n > 0; n--) {
+    for(let i = 0; i < n; i++){
+      if(array[i] > array[i + 1]){
+        [array[i], array[i + 1]] = [array[i+1], array[i]];
+      }
+    }
+  }
+  novoArray.push(array[array.length - 2], array[1]);
   return novoArray;
 }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-  const novoArray = (a, b) => {
-    return a - b
+  // const novoArray = (a, b) => {
+  //   return a - b
+  // }
+  // return array.sort(novoArray);
+
+  for(let n = array.length - 1; n > 0; n--) {
+    for(let i = 0; i < n; i++){
+      if(array[i] > array[i + 1]){
+        [array[i], array[i + 1]] = [array[i + 1], array[i]];
+      }
+    }
   }
-  return array.sort(novoArray);
+  return array;
 }
 // EXERCÍCIO 12
 function filmeFavorito() {
@@ -233,12 +252,19 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
-
+  consultasNome.sort((a, b) => {
+    if(a.nome < b.nome){
+      return -1
+    }else {
+      return true
+    }
+  })
+  return consultasNome
 }
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
-
+  
 }
 
 // EXERCÍCIO 20
