@@ -1,0 +1,21 @@
+.titulo-principal{
+  font-size: 40px;
+  background: yellow;
+  color:black;
+  text-align:center;
+  padding: 10px;
+}
+
+header div p {
+  font-size: 26px;
+  text-align: center;
+  position: relative;
+}
+
+header div a {
+  text-decoration: none;
+  margin: 5px;
+  position: relative;
+  float: right;
+  display: inline-block;
+}
