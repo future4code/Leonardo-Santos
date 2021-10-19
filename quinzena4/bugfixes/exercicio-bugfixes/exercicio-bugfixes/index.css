@@ -136,3 +136,7 @@ td button {
 #container-de-descricao {
     padding-top: 30px;
 }
+
+.centralizar-texto {
+    text-align: center;
+}
