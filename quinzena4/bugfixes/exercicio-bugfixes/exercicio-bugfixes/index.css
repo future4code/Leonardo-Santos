@@ -140,3 +140,7 @@ td button {
 .centralizar-texto {
     text-align: center;
 }
+
+.img-tabela {
+    width: 60px;
+}
