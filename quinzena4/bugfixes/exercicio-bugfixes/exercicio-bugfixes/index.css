@@ -130,3 +130,9 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+
+/* Resolvendo bugs */
+
+#container-de-descricao {
+    padding-top: 30px;
+}
