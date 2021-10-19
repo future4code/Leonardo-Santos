@@ -108,7 +108,7 @@ td button {
     background-color: #fadf63;
     width: 150px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 5px; 
     color: black;
 }
 
@@ -152,4 +152,11 @@ td button {
 
 .btn-geral:hover {
     background-color: #a18f3e;
+}
+
+input {
+    border-bottom: 3px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
