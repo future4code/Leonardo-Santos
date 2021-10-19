@@ -160,3 +160,11 @@ input {
     border-left: none;
     border-right: none;
 }
+
+.fonte-padrao {
+    font-family: Roboto;
+}
+
+table {
+    margin: 0 auto;
+}
