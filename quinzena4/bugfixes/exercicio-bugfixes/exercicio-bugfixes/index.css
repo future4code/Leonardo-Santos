@@ -145,3 +145,11 @@ td button {
 .img-tabela {
     width: 60px;
 }
+
+.btn-geral:active {
+    color: #ffffff;
+}
+
+.btn-geral:hover {
+    background-color: #a18f3e;
+}
