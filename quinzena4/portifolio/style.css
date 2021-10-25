@@ -141,6 +141,10 @@ h2 {
   grid-area: projetos;
 }
 
+.projetos {
+  text-align: center;
+}
+
 
 /* FOOTER */
 
@@ -154,4 +158,16 @@ h2 {
   color: #fff;
   text-align: center;
   padding: 30px;
+}
+
+/* CONTATO */
+
+.formulario {
+  grid-area: conteudo;
+  margin: 0 auto;
+  width: 800px;
+  padding:30px;
+  display: grid;
+  box-shadow: 2px 2px rgb(240, 240, 240);
+  grid-column: 1 / -1;
 }
