@@ -1,0 +1,179 @@
+/* CONTEUDO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Estrutura Grid Geral */
+
+.estrutura {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 200px 100px;
+  grid-template-areas: 
+    "header header" 
+    "conteudo conteudo"
+    "projetos projetos"
+    "footer footer";
+}
+
+
+/* HEADER */
+.header {
+  grid-area: header;
+  background: #51beac;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.header h1 {
+  color: rgb(255, 255, 255);
+  max-width: 300px;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  background: rgba(0,0,0,.1);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.header nav a:hover {
+  background: rgba(0, 0, 0, .5)
+}
+
+.header li {
+  margin-left: 30px;
+}
+
+
+
+
+/* CONTEUDO PRINCIPAL */
+
+
+.conteudo {
+  grida-area: conteudo;
+  margin: 0 auto;
+  max-width: 800px;
+  padding:30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / -1;
+  gap: 100px;
+  box-shadow: 2px 2px rgb(240, 240, 240);
+}
+
+.sobre h2{
+  text-align: center;
+}
+
+.sobre p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.ensino h2 {
+  text-align: center;
+}
+
+.ensino ul {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.ensino ul li {
+  font-size: 18px;
+}
+
+.ensino a {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.habilidades h2 {
+  text-align: center;
+}
+
+.habilidades ul {
+  margin-top: 10px;
+}
+
+.habilidades ul li{
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  list-style-type: disc;
+}
+
+/* GALERIA DE PROJETOS */
+
+.nav-projetos {
+  grid-area: projetos;
+  display: grid;
+  background: #51beac34;
+  align-items: center;
+}
+
+.projetos {
+  padding: 10px;
+  text-align: center;
+}
+
+.projetos a {
+  display: block;
+  margin-top: 20px;
+}
+
+.projetos a img {
+  transition: .2s;
+  width: 60px;
+}
+
+.projetos a img:hover {
+  width: 100px;
+}
+
+
+/* FOOTER */
+
+.footer{
+  grid-area: footer;
+  background: #51beac;
+}
+
+.footer p {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}

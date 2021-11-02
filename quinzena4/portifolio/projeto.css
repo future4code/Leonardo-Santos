@@ -1,0 +1,28 @@
+.conteudo-projeto {
+  display: grid;
+  grid-row: 2 / 4;
+  justify-content: center;
+  margin: 5px auto;
+  width: 900px;
+  box-shadow: 2px 2px rgb(240, 240, 240);
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / -1;
+}
+
+.coluna-1 {
+  text-align: center;  
+}
+
+.coluna-2 {
+  text-align: center;
+}
+
+.coluna-2 ul li{
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.blackjack {
+  margin-top: 20px;
+  width: 330px;
+}
