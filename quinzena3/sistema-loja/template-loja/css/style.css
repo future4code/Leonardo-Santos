@@ -1,0 +1,38 @@
+.titulo-principal{
+  top: 0;
+  background: yellow;
+  font-size: 40px;
+  color:black;
+  text-align:center;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+header div p {
+  font-size: 26px;
+  text-align: center;
+  position: relative;
+}
+
+header div a {
+  text-decoration: none;
+  margin: 5px;
+  float: right;
+  display: inline-block;
+}
+
+.tamanho-da-img img{
+  max-width: 300px;
+}
+
+.footer {
+  background: yellow;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.footer p {
+  color: black;
+  text-align: center;
+  font-size: 26px;
+}
