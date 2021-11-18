@@ -20,13 +20,13 @@ class App extends React.Component {
         />
 
         <Post
-          nomeUsuario={'teste'}
+          nomeUsuario={'robertinho'}
           fotoUsuario={'https://picsum.photos/50/50?random=1'}
           fotoPost={'https://picsum.photos/200/150?random=2'}
         />
 
         <Post
-          nomeUsuario={'teste'}
+          nomeUsuario={'rogerinho'}
           fotoUsuario={'https://picsum.photos/50/50?random=5'}
           fotoPost={'https://picsum.photos/200/150?random=6'}
         />
