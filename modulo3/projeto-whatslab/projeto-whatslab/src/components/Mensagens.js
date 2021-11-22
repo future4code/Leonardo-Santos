@@ -17,11 +17,12 @@ const CaixaTexto = styled.input `
   display: flex;
   font-size: 1em;
   outline: none;
-  width: 380px;
+  min-width: 380px;
   padding: 5px;
-  margin-left: 70px;
+  margin-left: 120px;
   margin-bottom: 5px;
   border-radius: 5px;
+  position: fixed;
 `
 
 const CaixaUsuario = styled.input `
@@ -38,32 +39,38 @@ const CaixaUsuario = styled.input `
 `
 
 const Enviar = styled.button`
-  width: 10%;
   text-align: center;
   display: flex;
   padding: 8px;
   margin-bottom: 5px;
   margin-left: 5px;
-  
+  position: fixed;
+  margin-left: 520px;
 `
 
 const ContainerMensagem = styled.div `
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: #dcf8c6;
   margin-bottom: 50px;
   margin-left: 5px;
+  overflow-wrap: anywhere;
+  min-width: 200px;
+  max-width: 240px;
 `
 
 const Mensagem = styled.p `
-  display: block;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  margin-bottom: 40px;
+  display: flex;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-top: 0px;
 `
 
 const Usuario = styled.p `
-  display: block;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 5px;
   margin-bottom: 5px;
   font-weight: bold;
 `
@@ -106,37 +113,42 @@ class Mensagens extends React.Component {
 
     const listaMensagens = this.state.mensagens.map((mensagem)=> {
       return (
-        <div>
+        
 
           <ContainerMensagem>
-            <Usuario>{mensagem.usuario}</Usuario>
-            <Mensagem>
-              {mensagem.texto}
-            </Mensagem>
+           
+
+              <Usuario>{mensagem.usuario}</Usuario>
+              <Mensagem>
+                {mensagem.texto}
+              </Mensagem>
+            
           </ContainerMensagem>
-        </div>
+        
       )
     })
 
     return (
-      <Container>
-        <div>
-          {listaMensagens}
-        
-        </div>
-        
-        <CaixaUsuario
-          placeholder="Usuário"
-          value={this.state.valorInputUsuario}
-          onChange={this.onChangeInputUsuario}
-        />
-        <CaixaTexto
-          placeholder="Mensagem"
-          value={this.state.valorInputTexto}
-          onChange={this.onChangeInputTexto}
-        />
-        <Enviar onClick={this.enviaMensagem}>Enviar</Enviar>
-      </Container>
+      <div>
+        <Container>
+          <div>
+            {listaMensagens}
+          
+          </div>
+          
+          <CaixaUsuario
+            placeholder="Usuário"
+            value={this.state.valorInputUsuario}
+            onChange={this.onChangeInputUsuario}
+          />
+          <CaixaTexto
+            placeholder="Mensagem"
+            value={this.state.valorInputTexto}
+            onChange={this.onChangeInputTexto}
+          />
+          <Enviar onClick={this.enviaMensagem}>Enviar</Enviar>
+        </Container>
+      </div>
     )
   }
 }
