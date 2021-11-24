@@ -35,7 +35,7 @@ class App extends React.Component {
         default:
           console.log("Algo deu errado")
       }
-
+      
       return (
         <div className="App">
           {pagina}
