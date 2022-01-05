@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+import styled from "styled-components"
+import Header from "./components";
+import CriarPlaylist from "./components/CriarPlaylist";
+import VisualizarPlaylist from "./components/VisualizarPlaylist";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Container = styled.div`
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+`
+
+class App extends React.Component{
+  state = {
+    pagina: "criarPlaylist"
+  }
+
+  mudarPagina = (pagina) => {
+    this.setState({pagina: pagina})
+  }
+  render() {
+    const pagina = () => {
+      if(this.state.pagina === "criarPlaylist"){
+        return <CriarPlaylist/>
+      }else if(this.state.pagina === "visualizarPlaylist"){
+        return <VisualizarPlaylist/>
+      }
+    }
+
+    return (
+      <Container >
+        <Header
+          mudarPagina={this.mudarPagina}
+        />
+        {pagina()}
+      </Container>
+    );
+  }
 }
 
 export default App;
