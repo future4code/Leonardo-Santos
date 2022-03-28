@@ -1,16 +1,28 @@
-const array2 = [
-	{name: "Rogério", email: "roger@email.com", role: "user"},
-	{name: "Ademir", email: "ademir@email.com", role: "admin"},
-	{name: "Aline", email: "aline@email.com", role: "user"},
-	{name: "Jéssica", email: "jessica@email.com", role: "user"},  
-	{name: "Adilson", email: "adilson@email.com", role: "user"},  
-	{name: "Carina", email: "carina@email.com", role: "admin"}      
-] 
+enum ROLE {
+  ADMIN = "admin",
+  USER = "user"
+}
 
-const novoArray2 = array2.filter((array) => {
-    if(array.role === "admin"){
-        return array.email
-    }
-})
+type usuarios = {
+  name: string;
+  email: string;
+  role: ROLE;
+};
 
-console.log(novoArray2)
+const listaUsuarios: usuarios[] = [
+  { name: "Rogério", email: "roger@email.com", role: ROLE.USER },
+  { name: "Ademir", email: "ademir@email.com", role: ROLE.ADMIN },
+  { name: "Aline", email: "aline@email.com", role: ROLE.USER },
+  { name: "Jéssica", email: "jessica@email.com", role: ROLE.USER },
+  { name: "Adilson", email: "adilson@email.com", role: ROLE.USER },
+  { name: "Carina", email: "carina@email.com", role: ROLE.ADMIN }
+];
+
+const funcao5 = (list: usuarios[]): string[] => {
+  const emailsList: string[] = list
+    .filter((usuarios) => usuarios.role === ROLE.ADMIN)
+    .map((usuarios) => usuarios.email);
+  return emailsList;
+};
+
+console.log(funcao5(listaUsuarios))

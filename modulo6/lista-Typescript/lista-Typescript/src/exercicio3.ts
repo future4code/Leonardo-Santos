@@ -14,8 +14,8 @@ type Filme = {
 }
 
 
-const catalogoFilmes = (nome: string, ano: number, genero: GENERO, pontuacao?: number): Filme => {
+const funcao3 = (nome: string, ano: number, genero: GENERO, pontuacao?: number): Filme => {
     const filme = {nome, ano, genero, pontuacao};
     return filme
 }
-console.log(catalogoFilmes("Duna", 2021, GENERO.ACAO))
+console.log(funcao3("Duna", 2021, GENERO.ACAO))

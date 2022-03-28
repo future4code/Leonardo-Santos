@@ -1,4 +1,4 @@
-function tipoParametro (x: any): any{
+function funcao2 (x: any): any{
     return typeof x
 }
-console.log(tipoParametro(2))
+console.log(funcao2(2))
