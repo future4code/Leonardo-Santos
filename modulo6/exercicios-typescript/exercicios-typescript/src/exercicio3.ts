@@ -1,7 +1,21 @@
-function checaAnoBissexto (ano: number): boolean {
-    const cond1 = ano % 400 === 0
-    const cond2 = (ano % 4 === 0) && (ano % 100 !== 0)
-
-    return cond1 || cond2
+enum GENERO {
+	ACAO="ação",
+	DRAMA="drama",
+	COMEDIA="comédia",
+	ROMANCE="romance",
+	TERROR="terror"
 }
-console.log(checaAnoBissexto(2003))
+
+type Filme = {
+    nome: string,
+    ano: number,
+    genero: GENERO,
+    pontuacao?: number
+}
+
+
+const catalogoFilmes = (nome: string, ano: number, genero: GENERO, pontuacao?: number): Filme => {
+    const filme = {nome, ano, genero, pontuacao};
+    return filme
+}
+console.log(catalogoFilmes("Duna", 2021, GENERO.ACAO))
