@@ -1,20 +1,16 @@
-function checarRenovacaoRG (anoAtual: number, anoNascimento: number, anoEmissao: number): boolean | string{
-    
-    let idade: number = anoAtual - anoNascimento
-    let tempoCarteira: number = anoAtual - anoEmissao
+const array2 = [
+	{name: "Rogério", email: "roger@email.com", role: "user"},
+	{name: "Ademir", email: "ademir@email.com", role: "admin"},
+	{name: "Aline", email: "aline@email.com", role: "user"},
+	{name: "Jéssica", email: "jessica@email.com", role: "user"},  
+	{name: "Adilson", email: "adilson@email.com", role: "user"},  
+	{name: "Carina", email: "carina@email.com", role: "admin"}      
+] 
 
-    if(idade <= 20 ) {
-        return tempoCarteira >= 5 ? "passou dos 5 anos precisa renovar" : "ainda não passou os 5 anos"
-    
-    }else if(idade >= 20 || idade <= 50) {
-        return tempoCarteira >= 10 ? "passou dos 10 anos precisa renovar" : "ainda não passou os 10 anos"
-    
-    }else if(idade > 50) {
-        return tempoCarteira >=15 ? "passou dos 15 anos precisa renovar" : "ainda não passou os 15 anos"
-    
-    }else {
-        return "error"
+const novoArray2 = array2.filter((array) => {
+    if(array.role === "admin"){
+        return array.email
     }
-    
- }
- console.log(checarRenovacaoRG(2022, 1996, 2010))
+})
+
+console.log(novoArray2)
