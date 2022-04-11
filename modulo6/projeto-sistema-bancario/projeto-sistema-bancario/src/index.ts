@@ -13,9 +13,9 @@ app.post("/users/create", (req:Request, res:Response) => {
 
     const [day, month, year] = dateOfBirthAsString.split("/")
 
-    const dateOfBirth: Date = new Date(`${year} - ${month} - ${day}`)
+    const dataDeNascimento: Date = new Date(`${year} - ${month} - ${day}`)
 
-    const age:number = Date.now() - dateOfBirth.getTime()
+    const age:number = Date.now() - dataDeNascimento.getTime()
 
     const ageInYear: number = age / 1000 / 60 / 60 / 24 / 365
 
@@ -27,7 +27,7 @@ app.post("/users/create", (req:Request, res:Response) => {
     accounts.push({
       name,
       CPF,
-      dateOfBirth,
+      dataDeNascimento,
       saldo: 0,
       extrato: []
     })

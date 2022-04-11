@@ -8,7 +8,7 @@ export type Transaction = {
 export type Account = {
   name: string,
   CPF: string,
-  dateOfBirth: Date,
+  dataDeNascimento: Date,
   saldo: number,
   extrato: Array<Transaction>
 }
