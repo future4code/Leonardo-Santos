@@ -1,9 +1,7 @@
 ### Exercicio 1
 
-a)R: 
-	```
-Chave estrangeira, ou Foreign Key (FK), ou ainda chave externa é a chave que permite a referência a registros 	oriundos de outras tabelas.
-	```
+a)R: Chave estrangeira, ou Foreign Key (FK), ou ainda chave externa é a chave que permite a referência a registros 	oriundos de outras tabelas.
+
 
 b)R: 
 	```
@@ -35,6 +33,9 @@ b)R:
 
 
 ### Exercicio 3
+
+a)R: ON pode ser utilizado quando se tem nomes de colunas diferentes ou iguais entre tabelas.
+
 
 b)R: 
 	```
