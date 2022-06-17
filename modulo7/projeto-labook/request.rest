@@ -1,0 +1,21 @@
+###
+POST  http://localhost:3003/labook/user/create
+Content-Type: application/json
+
+{
+  "name": "testeee2",
+  "email": "teste@gmail.com",
+  "password": "senha123"
+}
+
+###
+POST http://localhost:3003/labook/post/create
+Content-Type: application/json
+
+{
+    "photo": "https://picsum.photos/id/1/200/300",
+    "description": "Just add your desired image size, after our URL, and you'll get a random image",
+    "creationData": "01/04/2022",
+    "type": "teste",
+    "userId": "1655151991679"
+}
