@@ -8,7 +8,7 @@ export class Authenticator {
   public generateToken = (payload: AuthenticationData): string => {
     const token = jwt.sign(payload,
       process.env.JWT_KEY as string,
-      { expiresIn: "2h" });
+      { expiresIn: "10h" });
     
     return token;
   };
