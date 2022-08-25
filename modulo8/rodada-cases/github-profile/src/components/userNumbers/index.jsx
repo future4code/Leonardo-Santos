@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
 import {
   Container,
   NumberContainer
@@ -8,11 +7,10 @@ import {
 const UserNumbers = props => (
   <Container>
     <NumberContainer>
-      <Link to="/repos">
         <h1>{props.repos}</h1>
         <h2>Repositórios</h2>
 
-      </Link>
+
     </NumberContainer>
 
     <NumberContainer>
