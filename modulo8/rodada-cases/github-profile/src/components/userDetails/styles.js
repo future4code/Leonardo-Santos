@@ -33,7 +33,8 @@ export const Description = styled.p`
   text-align: justify;
   color: #777;
   line-height: 1.3;
-  overflow: hidden;
+  overflow-wrap: anywhere;
+  flex-direction: column;
 
   @media (max-width: 430px) {
     width: 250px;
