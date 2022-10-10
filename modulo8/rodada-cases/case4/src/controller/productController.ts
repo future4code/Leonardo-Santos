@@ -1,10 +1,13 @@
 import { Request, Response } from "express";
 import { ProductBusiness } from "../business/ProductBusiness";
 import { ProductInputDTO } from "../model/Product";
-// import moment from "moment"
+
+
 
 export class ProductController {
     constructor(private productBusiness: ProductBusiness) {}
+
+    
 
     async createProductController (req: Request, res: Response) {
         try{
@@ -23,7 +26,7 @@ export class ProductController {
             })
 
         }catch (error: any){
-            res.status(error.statusCode).send(error.message)
+            throw new Error(error.sqlMessage || error.message);
         }
     }
 
@@ -36,7 +39,8 @@ export class ProductController {
             res.status(201).send(product)
             
         } catch (error: any) {
-            res.status(error.statusCode).send(error.message)
+            throw new Error(error.sqlMessage || error.message);
         }
     }
+    
 }

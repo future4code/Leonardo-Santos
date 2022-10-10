@@ -1,0 +1,9 @@
+###
+POST http://localhost:3003/amaroteam/product/create
+content-type: application/json
+
+{
+  "name": "teste",
+  "price": "20,00",
+  "image_url": "https://picsum.photos/id/2/200/300"
+}
